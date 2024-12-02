@@ -1,4 +1,4 @@
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import {QueryClient, QueryClientProvider} from '@tanstack/react-query';
 import React from 'react';
 import {
   SafeAreaProvider,
@@ -6,11 +6,11 @@ import {
 } from 'react-native-safe-area-context';
 import 'react-native-svg';
 import Toast from 'react-native-toast-message';
-import { Provider } from 'react-redux';
-import { PersistGate } from 'redux-persist/integration/react';
-import { Router } from './src/navigation/Router';
-import { persistor, store } from './src/store/configureStore';
-import { ThemeProvider } from './src/theme/ThemeContext';
+import {Provider} from 'react-redux';
+import {PersistGate} from 'redux-persist/integration/react';
+import {Router} from './src/navigation/Router';
+import {ThemeProvider} from './src/theme/ThemeContext';
+import {persistor, store} from './src/store/configureStore';
 
 const queryClient = new QueryClient();
 
